@@ -10,10 +10,10 @@ function App() {
 
   const userInfo = {
     firstName: 'Michael',
-    lastName: 'Morshin',
+    lastName: 'Rebet',
     address: {
       country: 'UA',
-      city: 'Ivano-Frankivsk',
+      city: 'Lviv',
       street: 'Nezalezhnosti, 1',
       postIndex: '76000'
     }
@@ -25,7 +25,7 @@ function App() {
     address: {
       country: 'UA',
       city: 'Ternopil',
-      street: 'Nezalezhnosti, 1',
+      street: 'Franka, 45',
       postIndex: '73300'
     },
     active: true
@@ -55,18 +55,18 @@ function App() {
   },
   {
     firstName: 'Steven',
-    lastName: 'Jackson',
+    lastName: 'Kniazevych',
     address: {
       country: 'UA',
       city: 'Ivano-Frankivsk',
-      street: 'Nezalezhnosti, 1',
+      street: 'Dovzenka, 34',
       postIndex: '76000'
     },
     active: false
   },
   {
     firstName: 'Ivan',
-    lastName: 'Nojackson',
+    lastName: 'Petriv',
     address: {
       country: 'UA',
       city: 'Ivano-Frankivsk',
@@ -80,7 +80,7 @@ function App() {
     lastName: 'Yesjackson',
     address: {
       country: 'UA',
-      city: 'Ivano-Frankivsk',
+      city: 'Kyiv',
       street: 'Nezalezhnosti, 1',
       postIndex: '960111'
     },
@@ -94,14 +94,7 @@ function App() {
     <div className="App">
 
 
-
-
-   
-        <CheckBox userInfo={userInfoList} />
-
-
-     
-
+      <CheckBox userInfo={userInfoList} />
 
     </div>
 
@@ -109,34 +102,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-/*
-function App() {
-
-
-  const [users, set] = useState([{ id: 1, name: 'Ivan', pasword: "1111" }, { id: 2, name: 'Petro', pasword: "111" },
-  { id: 3, name: 'Pavlo', pasword: "111" }, { id: 4, name: 'Stepan', pasword: "1111" },
-  { id: 5, name: 'Olia', pasword: "1141" }, { if: 6, name: 'ITCA Cource', pasword: "1111" }])
-
-  return (
-    <div className="App">
-
-      {users.map(user => { return <GetUsers usersName={users} key={users.id} /> })}
-
-
-
-      <h3> Додати нового користувача </h3>
-      <input type="text" class="newUser" size="10" placeholder="Імя користувача"></input>
-      <button id="addUser" >Додати</button>
-
-
-    </div>
-
-  );
-}*/
